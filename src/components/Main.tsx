@@ -22,7 +22,7 @@ const Main = (props: Props) => {
           </p>
           <p>We provide true care into each and every member.</p>
         </div>
-        <div className="my-10 flex justify-center gap-10">
+        <div className="my-10 flex flex-col  mx-2 justify-center items-center md:flex-row md:mx-6 gap-10">
           {benefitsContent.map((benefit, index) => {
             return (
               <Benefits
@@ -36,15 +36,15 @@ const Main = (props: Props) => {
         </div>
       </section>
 
-      <section className="relative flex items-center justify-center gap-16">
+      <section className="flex flex-col md:flex-row items-center justify-center gap-16 ">
         <img src={BenefitsPageGraphic} alt="" />
+
+        <div className="max-w-[650px] relative">
         <img
-          className="absolute top-10 left-[600px]"
+          className="absolute -top-16 -left-14"
           src={AbstractWaves}
           alt=""
         />
-
-        <div className="max-w-[650px]">
           <h2 className="font-montserrat text-3xl font-bold uppercase">
             millions of happy members getting{" "}
             <span className=" text-primary-500">fit</span>

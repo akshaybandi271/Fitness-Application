@@ -8,7 +8,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-primary-100 flex items-center justify-center py-10 gap-4">
+    <footer className="bg-primary-100 flex flex-col pl-10 py-10 gap-10 md:flex-row md:justify-center md:items-center">
       <div className="max-w-[600px]">
         <img src={Logo} alt="" />
         <p className="my-4">
