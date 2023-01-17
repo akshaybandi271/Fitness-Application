@@ -17,20 +17,20 @@ const ContactUs = (props: Props) => {
         </p>
       </div>
 
-      <div className="my-20 ml-10 flex justify-center">
-        <form className="max-w-[620px]">
+      <div className="my-20  flex flex-col items-center gap-10 md:flex-row md:justify-center">
+        <form className="max-w-[800px] mx-4">
           <input
-            className="my-4 h-12 w-[600px] rounded-md bg-primary-300 px-2 text-white placeholder-white placeholder:uppercase"
+            className="my-4 h-12 w-full rounded-md bg-primary-300 px-2 text-white placeholder-white placeholder:uppercase"
             type="text"
             placeholder="Name"
           />
           <input
-            className="my-4 h-12 w-[600px] rounded-md bg-primary-300 px-2 text-white placeholder-white placeholder:uppercase"
+            className="my-4 h-12 w-full rounded-md bg-primary-300 px-2 text-white placeholder-white placeholder:uppercase "
             type="email"
             placeholder="Email"
           />
           <textarea
-            className="my-4 h-32 w-[600px] resize-none rounded-md bg-primary-300 px-2 py-2 text-white placeholder-white placeholder:uppercase"
+            className="my-4 h-32 w-full resize-none rounded-md bg-primary-300 px-2 py-2 text-white placeholder-white placeholder:uppercase "
             placeholder="message"
           ></textarea>
           <button
@@ -41,11 +41,11 @@ const ContactUs = (props: Props) => {
           </button>
         </form>
 
-        <div className="mr-32">
-          <img src={ContactUsPageGraphic} alt="" className="w-[500px]" />
+        <div className="">
+          <img src={ContactUsPageGraphic} alt="" className="max-w-[800px]" />
         </div>
       </div>
-      <img src={EvolveText} alt="" className="absolute right-6 bottom-0" />
+      <img src={EvolveText} alt="" className="hidden md:max-w-[600px] md:block md:absolute md:right-6 md:-bottom-10" />
     </section>
   )
 }

@@ -19,7 +19,7 @@ const OurClasses = (props: Props) => {
         </p>
       </div>
 
-      <div className="flex gap-4 w-[2300px] whitespace-nowrap overflow-x-auto px-10">
+      <div className="flex gap-4 w-[2300px] overflow-x-auto px-10">
         {classesContent.map((content, index) => {
           return (
             <Image
@@ -55,9 +55,9 @@ const Image = ({ image, title, description }: ClassesType) => {
     >
       <img src={image} alt="" className="w-full" />
       {isHovering && (
-        <div className="bg-primary-500 absolute inset-0 flex flex-col justify-center items-center">
+        <div className="bg-primary-500 absolute inset-0 flex flex-col justify-center items-center ">
           <h3 className="text-lg">{title}</h3>
-          {description && <p>{description}</p>}
+          {description && <p className="mt-4 mx-2 text-sm">{description}</p>}
         </div>
       )}
     </div>
